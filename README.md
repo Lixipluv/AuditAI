@@ -10,6 +10,12 @@ AuditAI is a security analysis tool for smart contracts, leveraging **Slither** 
 ✅ **Customizable Reports** – Export results in JSON, PDF, or SARIF.  
 ✅ **Efficient & Scalable** – Optimized for performance and parallel execution.  
 
+
+# AuditAI - Smart Contract Security Analysis with Slither & AI
+
+![AuditAI Dashboard](assets/auditai-dashboard.png)
+
+
 ## Getting Started
 
 ### Prerequisites
