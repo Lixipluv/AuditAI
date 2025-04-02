@@ -12,8 +12,6 @@ AuditAI is a comprehensive security analysis tool designed for smart contracts w
 ✅ **Customizable Reports** – Easily export findings in JSON, PDF, or SARIF formats.  
 ✅ **Efficient & Scalable** – Designed for high performance and parallel analyses.
 
-![AuditAI Dashboard](docs/img/dashboard.png)
-
 ## Getting Started
 
 ### Prerequisites
