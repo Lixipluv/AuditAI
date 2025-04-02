@@ -1,0 +1,83 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+.venv/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Logs gerais
+*.log
+
+# Arquivos gerados pelo sistema
+.DS_Store
+Thumbs.db
+
+# Diretórios de build e distribuição
+dist/
+build/
+
+# Diretórios temporários e cache
+.cache/
+.vscode/
+
+# Docker
+*.tar
+*.tar.gz
+*.dockerignore
+
+# Arquivos de cobertura de testes
+coverage/
+
+# Arquivos e relatórios gerados pelo AuditAI
+reports/
+*.pdf
+*.json
+*.sarif
+
+# Arquivos sensíveis e secretos
+*.key
+*.pem
+*.crt
+
+# Editor settings (se aplicável)
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# SQLite database (caso exista integração futura)
+*.sqlite
+*.sqlite3

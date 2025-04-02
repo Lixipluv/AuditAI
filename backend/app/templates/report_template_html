@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1, h2 { color: #333; }
+        .vulnerability { padding: 10px; margin-bottom: 10px; border-bottom: 1px solid #ddd; }
+        .impact { color: #d9534f; }
+        .confidence { color: #5bc0de; }
+    </style>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <h2>Relatório Gerado pela IA AuditAI</h2>
+
+    {% for item in vulnerabilities %}
+        <div class="vulnerability">
+            <h3>{{ item.check }}</h3>
+            <p>{{ item.description }}</p>
+            <p><strong>Impacto:</strong> <span class="impact">{{ item.impact }}</span></p>
+            <p><strong>Confiança:</strong> <span class="confidence">{{ item.confidence }}</span></p>
+        </div>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+services:
+  analyzer:
+    image: trailofbits/eth-security-toolbox
+    container_name: smart_read_analyzer
+    volumes:
+      - ./backend/app/contracts:/share/contracts
+      - ./backend/app/reports:/share/reports
+    tty: true
+    entrypoint: ["/bin/sh", "-c", "
+      solc-select install 0.4.24 &&
+      solc-select install 0.4.26 &&
+      solc-select install 0.5.17 &&
+      solc-select install 0.6.12 &&
+      solc-select install 0.7.6 &&
+      solc-select install 0.8.23 &&
+      solc-select use 0.8.23 &&
+      tail -f /dev/null
+    "]
